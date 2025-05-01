@@ -16,6 +16,8 @@ void lbt(){
 int main ()
 {
     struct DADOS dados[3];
+    // DADOS é o nome do tipo da struct, definido antes como typedef struct DADOS...
+    // dados (minúsculo) é o nome da variável, ou seja, o array de 3 structs.
     int ind;
     int *b, *m;
     float *num;
@@ -27,7 +29,8 @@ int main ()
         scanf("%i", &dados[ind].chave);
         lbt();
         printf("Informe um nome: ");
-        scanf("%i", &dados[ind].nome);
+        scanf("%s", &dados[ind].nome);
+        lbt();
     }
     
 }
