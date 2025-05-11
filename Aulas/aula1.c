@@ -27,6 +27,8 @@ int main ()
     for (ind= 0; ind<3; ind++){
         printf("Informe um valor para chave: ");
         scanf("%i", &dados[ind].chave);
+        //scanf acessa o campo "chave" da variável dados de posição [ind] no vetor,
+        //ou seja, se ind for 1, dados de posição 1 no vetor.
         lbt();
         printf("Informe um nome: ");
         scanf("%s", &dados[ind].nome);

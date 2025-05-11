@@ -10,14 +10,18 @@ typedef struct DADOS{
 int main (){
     //Fazer a Estrutura ser um vetor alocado dinamicamente
     struct DADOS* D;
-    //D=(DADOS*)MALLOC(COLUNAS * SIZEOF(DADOS));
+    
+    D=(DADOS*)MALLOC(COLUNAS * SIZEOF(DADOS));
+    //D é um ponteiro que aponta para um espaço de memória que tenha o tamanho
+    // de COLUNAS vezes o tamanho em bytes de DADOS
 
-    //Fazer a Estrutura ser uma matriz alocada dinamicamente
+    //Fazer a Estrutura ser uma matriz alocada dinamicamente:
     struct DADOS** DD;
-    //DD=(DADOS**)MALLOC(DUAS LINHAS * SIZEOF(DADOS))
-    //for(i = 0; i < 2; i++){
-    //  DD[i]=(DADOS*)MALLOC(DUAS COLUNAS * SIZEOF(DADOS));  
-    //}
+
+    DD=(DADOS**)MALLOC(DUAS LINHAS * SIZEOF(DADOS))
+    for(i = 0; i < 2; i++){
+      DD[i]=(DADOS*)MALLOC(DUAS COLUNAS * SIZEOF(DADOS));  
+    }
 
     int linhas, colunas;
     int i,j;
