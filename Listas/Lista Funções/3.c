@@ -1,61 +1,15 @@
 /*
-1) Faça um programa em que uma estrutura heterogênea será armazenada dentro de uma matriz de
-2 x 2. A estrutura heterogênea deverá ter apenas 1 dado interno
-
-#include <stdio.h>
-
-typedef struct {
-    int valor;
-    char carac;
-} DADOS;
-
-int main() {
-    DADOS matriz[2][2];
-
-    
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 2; j++) {
-            printf("Digite um valor para matriz[%d][%d]: ", i, j);
-            scanf("%d", &matriz[i][j].valor);
-            printf("Digite um caractere para matriz[%d][%d]: ", i, j);
-
-            scanf(" %c", &matriz[i][j].carac);
-        }
-    }
-
-    
-    printf("\nValores armazenados:\n");
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 2; j++) {
-            printf("matriz[%d][%d] = Valor: %d, Caractere: %c\n", i, j, matriz[i][j].valor, matriz[i][j].carac);
-        }
-    }
-
-    return 0;
-}
-
-2) Assinale a alternativa correta. Ao executar o programa a seguir, qual será o resultado apresentado
-no printf “Valor de X: ” em tela?
-
-#include <stdlib.h>
-#include <stdio.h>
-void multiplicar(int *Parametro){
- int resultado;
- resultado = *Parametro * 10;
- *Parametro = 1000;
- printf(“Resultado da multiplicação: %d\n”, resultado);
- printf(“Paramentro: %d\n”, *Parametro);
-}
-int main(){
- int x = 30;
- multiplicar(&x);
- printf(“Valor de X: %d\n”, x);
-} // Fim da Função Principal (main)
-
-b) 1000
+3) Declare uma estrutura heterogênea que tenha duas variáveis, sendo elas: um vetor de inteiros e
+uma cadeia de caracteres. Declare uma variável do tipo ponteiro para a estrutura com tamanho 5.
+a. Faça a inclusão dos dados para o vetor inteiro da estrutura heterogênea.
+b. Faça a alteração de apenas UM dos dados do vetor de inteiros de apenas UMA célula
+do vetor da estrutura heterogênea.
+c. Apague os dados apenas a célula 3 do vetor da estrutura heterogênea.
+d. Apresente o vetor completo:
+i. Após preencher todo o vetor
+ii. Após mudar um dado de uma das células
+iii. Após apagar uma célula
 */
-
-//NÚMERO 3:
 
 #include <stdio.h>
 #include <string.h>
