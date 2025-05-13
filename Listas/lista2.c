@@ -102,4 +102,31 @@ int main() {
 
     return 0;
 }
+void alteraValor(int **Parametro){
+    *Parametro = (int *)malloc(sizeof(int)); // aloca memória para 1 inteiro
+
+    if (*Parametro == NULL) {
+        printf("Erro ao alocar memória.\n");
+        return;
+    }
+
+    printf("Me informe o valor do inteiro: ");
+    scanf("%d", *Parametro); // lê o valor e armazena na área alocada
+
+    // Não precisa de return 0 em funções void
+}
+
+int main (){
+    int *valor = NULL;
+    
+    alteraValor(&valor);
+
+    if (valor != NULL) {
+        printf("O valor é = %d\n", *valor);
+        free(valor); // libera a memória alocada
+    }
+
+    return 0;
+}
 */
+
